@@ -3,7 +3,7 @@
 // 1, 2, 5, 7, 19 -> [1, 2, 5, 7, 19]
 // 6, 1, 33 -> [6, 1, 33]
 
-Console.WriteLine("Введите целое положительное число");
+Console.WriteLine("Введите целое положительное число (количество элементов массива)");
 int number = Convert.ToInt32(Console.ReadLine());
 
 int[] array = new int[number];
@@ -22,7 +22,7 @@ void FillArray(int[] arr)
 
 void PrintArray(int[] arr)
 {
-    Console.Write($"[");
+    Console.Write($" -> [");
     for (int i = 0; i < arr.Length - 1; i++)
     {
         Console.Write($"{arr[i]}, ");
