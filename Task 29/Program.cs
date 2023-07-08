@@ -27,6 +27,5 @@ void PrintArray(int[] arr)
     {
         Console.Write($"{arr[i]}, ");
     }
-    int last = arr.Length - 1;
-    Console.Write($"{arr[last]}]");
+        Console.Write($"{arr[arr.Length - 1]}]");
 }
