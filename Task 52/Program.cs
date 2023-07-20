@@ -56,8 +56,7 @@ void PrintArrayDouble(double[] arr, string sep = "; ", int round = 1)
         if (i < arr.Length - 1) Console.Write($"{num}{sep}");
         else Console.Write($"{num}");
     }
-    }
-
+}
 
 int[,] array2d = CreateMatrixRndInt(3, 4, 1, 9);
 PrintMatrix(array2d);
