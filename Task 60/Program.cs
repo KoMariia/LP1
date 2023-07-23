@@ -31,17 +31,17 @@ void PrintMatrixTwoDigit(int[,,] matrix)
             for (int k = 0; k < matrix.GetLength(2); k++)
             {
                 Console.Write($"{matrix[i, j, k],4}  ({i},{j},{k})");
-                Console.WriteLine();
             }
 
         }
+        Console.WriteLine();
     }
 }
 
-int[,,] matrixTwoDigitIn = CreateMatrixTwoDigitInt(2, 2, 2);
-if (matrixTwoDigitIn.Length > 90)
+int[,,] matrixTwoDigitInt = CreateMatrixTwoDigitInt(2, 2, 2);
+if (matrixTwoDigitInt.Length > 90)
 {
     Console.WriteLine("Слишком большое количество элементов - массив из неповторяющихся двузначных чисел сформировать невозможно");
     return;
 }
-PrintMatrixTwoDigit(matrixTwoDigitIn);
+PrintMatrixTwoDigit(matrixTwoDigitInt);
